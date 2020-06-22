@@ -20,7 +20,7 @@ class SubscriptionForm extends React.Component {
     alert(`You have successfully subscribed with the email ${this.state.email}.`)
 
     const data = new FormData(event.target);
-    fetch("https://script.google.com/macros/s/AKfycbwhcQFWuczLsIeDzx8bhbzghDyLMadFsolAq5ZxwLw74Lv0B9g8/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbz9MC60KNtRx2q0F5u2E_tom_3Dp2ODTEiMHogFf5me8IdzqRES/exec", {
       method: 'POST',
       body: data,
     });
@@ -37,7 +37,7 @@ class SubscriptionForm extends React.Component {
             value={this.state.firstName}
             onChange={this.handleInputChange}
           />
-        <SubscribeButton type="submit">Submit</SubscribeButton>
+        <SubscribeButton type="submit">Unsubscribe</SubscribeButton>
       </form>
     )
   }
