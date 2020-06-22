@@ -4,7 +4,7 @@ module.exports = {
       author: "Sahel Mohammad Iqbal",
       email: "thestudentwatch@gmail.com",
       description: "The Student Watch is a website for the younger generation to engage in political discourse.",
-      siteUrl: "https://thestudentwatch.live",
+      siteUrl: "https://thestudentwatch.netlify.app",
       image: "static/logo.png",
       twitter: "@SahelMIqbal",
   },
