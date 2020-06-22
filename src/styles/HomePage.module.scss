@@ -1,0 +1,21 @@
+.article {
+    padding: 0;
+    a {
+        color: black;
+        p {
+            color: rgba(0, 0, 0, 0.9);
+        }
+    }
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .article {
+      padding: 1rem;
+      a article {
+          padding: 1.5rem;
+      }
+    }
+  }
