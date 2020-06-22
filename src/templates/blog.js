@@ -47,7 +47,7 @@ export const query = graphql`
 `
 
 const Blog = (props) => {
-  const baseUrl = props.data.site.siteUrl
+  const baseUrl = "https://thestudentwatch.netlify.app"
   const blogPost = props.data.markdownRemark.frontmatter
   const twitterMessage = "Check out this new article at The Student Watch website."
   return (
