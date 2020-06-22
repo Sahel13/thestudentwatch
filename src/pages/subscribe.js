@@ -15,11 +15,11 @@ const SubscribePage = () => {
             <div css={css`padding: 0 ${rhythm(2/3)};`}>
                 <h1 css={css`text-align: center;`}>Subscribe</h1>
                 <p>
-                    If you like the content on the website, and would like to be notified when new articles are posted, you can subscribe via RSS(link to RSS) or by email by submitting the form below:
+                    If you like the content on the website, and would like to be notified when new articles are posted, you can subscribe via email by submitting the form below:
                 </p>
                 <Form />
                 <p>
-                    If neither of those options tickles your fancy, you could simply drop in from time to time. Keep in mind that the website may be hard to find as it is new, so you might want to bookmark it.
+                    If this doesn't tickle your fancy, you could simply drop in from time to time. Keep in mind that the website may be hard to find as it is new, so you might want to bookmark it or add it to your desktop.
                 </p>
             </div>
 
