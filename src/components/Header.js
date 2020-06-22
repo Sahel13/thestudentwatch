@@ -47,7 +47,7 @@ const Header = (props) => {
 }
 
 const HeaderText = styled.p`
-    ${scale(1/2)};
+    ${scale(1/3)};
     color: white;
     position: absolute;
     left: 0;

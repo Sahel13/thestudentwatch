@@ -16,11 +16,6 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 export const query = graphql`
   query($slug: String!) {
-    site {
-      siteMetadata {
-        siteUrl
-      }
-    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
@@ -47,7 +42,7 @@ export const query = graphql`
 `
 
 const Blog = (props) => {
-  const baseUrl = "https://thestudentwatch.netlify.app"
+  const baseUrl = "https://thestudentwatch.live"
   const blogPost = props.data.markdownRemark.frontmatter
   const twitterMessage = "Check out this new article at The Student Watch website."
   return (
