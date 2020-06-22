@@ -17,7 +17,7 @@ class SubscriptionForm extends React.Component {
   }
   handleSubmit = event => {
     event.preventDefault()
-    alert(`You have successfully subscribed with the email ${this.state.email}.`)
+    alert(`You have successfully unsubscribed with the email ${this.state.email}.`)
 
     const data = new FormData(event.target);
     fetch("https://script.google.com/macros/s/AKfycbz9MC60KNtRx2q0F5u2E_tom_3Dp2ODTEiMHogFf5me8IdzqRES/exec", {
