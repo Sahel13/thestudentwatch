@@ -18,7 +18,7 @@ const SEO = ({ title, description, image, article }) => {
         }
       }
       file(relativePath: {eq: "images/logo.png"}) {
-        siteLogo: publicURL
+        publicURL
       }
     }
   `)
@@ -27,9 +27,10 @@ const SEO = ({ title, description, image, article }) => {
     siteTitle,
     siteDescription,
     siteUrl,
-    siteLogo,
     twitter,
     } = data.site.siteMetadata
+
+  const siteLogo = data.file.publicUrl
 
   const seo = {
       title: title || siteTitle,
