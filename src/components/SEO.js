@@ -30,7 +30,7 @@ const SEO = ({ title, description, image, article }) => {
     twitter,
     } = data.site.siteMetadata
 
-  const siteLogo = data.file.publicUrl
+  const siteLogo = data.file.publicURL
 
   const seo = {
       title: title || siteTitle,
