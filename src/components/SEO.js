@@ -5,67 +5,68 @@ import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
 
 const SEO = ({ title, description, image, article }) => {
-    const { pathname } = useLocation()
+  const { pathname } = useLocation()
 
-    const data = useStaticQuery(graphql`
-      query {
-        site {
-          siteMetadata {
-            siteTitle: title
-            siteDescription: description
-            siteUrl
-            siteLogo: image
-            twitter
-          }
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          siteTitle: title
+          siteDescription: description
+          siteUrl
+          twitter
         }
       }
-    `)
-
-    const {
-      siteTitle,
-      siteDescription,
-      siteUrl,
-      siteLogo,
-      twitter,
-      } = data.site.siteMetadata
-
-    const seo = {
-        title: title || siteTitle,
-        description: description || siteDescription,
-        image: `${siteUrl}${image || siteLogo}`,
-        url: `${siteUrl}${pathname}`,
+      file(relativePath: {eq: "images/logo.png"}) {
+        siteLogo: publicURL
+      }
     }
+  `)
 
-    let pageTitle
-    if (title == null) {
-      pageTitle = siteTitle
-    } else {
-        pageTitle = `${seo.title} | ${siteTitle}`
-    }
+  const {
+    siteTitle,
+    siteDescription,
+    siteUrl,
+    siteLogo,
+    twitter,
+    } = data.site.siteMetadata
 
-    return (
-        <Helmet title={pageTitle}>
+  const seo = {
+      title: title || siteTitle,
+      description: description || siteDescription,
+      image: `${siteUrl}${image || siteLogo}`,
+      url: `${siteUrl}${pathname}`,
+  }
 
-            {/* <link rel="canonical" href={seo.url} /> */}
-            <meta name="description" content={seo.description} />
-            <meta name="image" content={seo.image} />
+  let pageTitle
+  if (title == null) {
+    pageTitle = siteTitle
+  } else {
+      pageTitle = `${seo.title} | ${siteTitle}`
+  }
 
-            <meta property="og:site_name" content={siteTitle}></meta>
-            <meta property="og:url" content={seo.url} />
-            <meta property="og:type" content={article ? "article" : "website"} />
-            <meta property="og:title" content={seo.title} />
-            <meta property="og:description" content={seo.description} />
-            <meta property="og:image" content={seo.image} />
+  return (
+      <Helmet title={pageTitle}>
 
-            <meta name="twitter:card" content={article ? "summary_large_image" : "summary"} />
-            <meta name="twitter:creator" content={twitter} />
-            <meta name="twitter:title" content={seo.title} />
-            <meta name="twitter:description" content={seo.description} />
-            
-            {seo.image && <meta name="twitter:image" content={seo.image} />}
+          {/* <link rel="canonical" href={seo.url} /> */}
+          <meta name="description" content={seo.description} />
+          <meta name="image" content={seo.image} />
 
-        </Helmet>
-    )
+          <meta property="og:site_name" content={siteTitle} />
+          <meta property="og:url" content={seo.url} />
+          <meta property="og:type" content={article ? "article" : "website"} />
+          <meta property="og:title" content={seo.title} />
+          <meta property="og:description" content={seo.description} />
+          <meta property="og:image" content={seo.image} />
+
+          <meta name="twitter:card" content={article ? "summary_large_image" : "summary"} />
+          <meta name="twitter:creator" content={twitter} />
+          <meta name="twitter:title" content={seo.title} />
+          <meta name="twitter:description" content={seo.description} />
+          <meta name="twitter:image" content={seo.image} />
+
+      </Helmet>
+  )
 }
 
 export default SEO

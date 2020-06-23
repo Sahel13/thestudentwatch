@@ -26,7 +26,7 @@ const HomePage = () => {
               author
               image {
                 childImageSharp {
-                  fluid(quality: 50) {
+                  fluid(maxWidth: 540) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }
