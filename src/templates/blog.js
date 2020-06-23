@@ -69,14 +69,14 @@ const Blog = (props) => {
                   <a href={
                     "https://twitter.com/share?url=" + 
                     baseUrl + "/" + 
-                    props.data.markdownRemark.fields.slug + "/" +
+                    props.data.markdownRemark.fields.slug +
                     "&text=" + twitterMessage} 
                     target="_blank" rel="noreferrer noopener">
                   <FontAwesomeIcon width="21" css={socialIcons} icon={faTwitter} />
                   </a>
                   <a href={
                     "https://www.facebook.com/sharer/sharer.php?u=" + 
-                    baseUrl + "/" + props.data.markdownRemark.fields.slug + "/"} 
+                    baseUrl + "/" + props.data.markdownRemark.fields.slug} 
                     target="_blank" rel="noreferrer noopener">
                     <FontAwesomeIcon width="21" css={socialIcons} icon={faFacebook} />
                   </a>
