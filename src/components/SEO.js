@@ -49,7 +49,7 @@ const SEO = ({ title, description, image, article }) => {
   return (
       <Helmet title={pageTitle}>
 
-          {/* <link rel="canonical" href={seo.url} /> */}
+          <link rel="canonical" href={seo.url} />
           <meta name="description" content={seo.description} />
           <meta name="image" content={seo.image} />
 
