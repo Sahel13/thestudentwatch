@@ -32,9 +32,9 @@ const NavigationBar = () => {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
                     <Link to="/" css={NavLinkStyle}>Articles</Link>
-                    <Link to="/about" css={NavLinkStyle}>About</Link>
-                    <Link to="/contribute" css={NavLinkStyle}>Contribute</Link>
-                    <Link to="/subscribe" css={NavLinkStyle}>Subscribe</Link>
+                    <Link to="/about/" css={NavLinkStyle}>About</Link>
+                    <Link to="/contribute/" css={NavLinkStyle}>Contribute</Link>
+                    <Link to="/subscribe/" css={NavLinkStyle}>Subscribe</Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
