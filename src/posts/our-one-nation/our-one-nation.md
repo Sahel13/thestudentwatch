@@ -4,6 +4,7 @@ date: "2020-06-22"
 excerpt: "Trying to process where we are going wrong as a country in making 'unity in diversity' a reality."
 description: "Trying to understand the reasons and drivers of all the hate, discrimination and violence in our country today. My perspective as a person brought up in a Hindu household."
 author: "Praneet Nandan"
+authorInfo: "The author is an Integrated M.Sc. student in physics at the National Institute of Science Education and Research, Bhubaneswar."
 image: './image.jpg'
 imageCredits: "Photo by Rebecca Zaal from Pexels"
 ---
