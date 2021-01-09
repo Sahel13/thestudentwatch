@@ -3,8 +3,8 @@ title: "#GoToPakistan?"
 date: "2020-05-20"
 excerpt: "A cursory look at the consequences of speaking your mind in India. Sequel to the first article."
 description: "A cursory look at the consequences of speaking your mind in India."
-author: "Nihas Muhammed KH"
-authorInfo: "The author is a 12th standard student."
+author: "Sahel Mohammad Iqbal"
+authorInfo: "The author is an Integrated M.Sc. student in physics at the National Institute of Science Education and Research, Bhubaneswar."
 image: './image.jpg'
 imageCredits: "Photo by Samantha Sophia from Unsplash"
 ---

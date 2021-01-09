@@ -3,8 +3,8 @@ title:  "My Premature Nationality Crisis"
 date: "2020-05-05"
 excerpt: "My personal experiences with the degrading religious tolerance and freedom of expression in India."
 description: "An article about a student's experiences with the degrading religious tolerance and freedom of expression in India."
-author: "Nihas Muhammed KH"
-authorInfo: "The author is a 12th standard student."
+author: "Sahel Mohammad Iqbal"
+authorInfo: "The author is an Integrated M.Sc. student in physics at the National Institute of Science Education and Research, Bhubaneswar."
 image: './image.jpg'
 imageCredits: "Photo by Naveed Ahmed from Unsplash"
 ---
