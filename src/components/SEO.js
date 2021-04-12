@@ -14,7 +14,6 @@ const SEO = ({ title, description, image, article }) => {
           siteTitle: title
           siteDescription: description
           siteUrl
-          twitter
         }
       }
       file(relativePath: {eq: "images/logo.png"}) {
