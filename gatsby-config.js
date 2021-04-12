@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
       title: "The Student Watch",
       author: "Sahel Mohammad Iqbal",
-      email: "thestudentwatch@gmail.com",
+      email: "sahel13miqbal@protonmail.ch",
       description: "The Student Watch is a website for the younger generation to engage in political discourse. The Student Watch contains opinion pieces by students on social, political and humanitarian issues.",
       siteUrl: "https://sahel13.github.io/thestudentwatch",
       image: "static/logo.png",
