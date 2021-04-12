@@ -43,7 +43,7 @@ export const query = graphql`
 `
 
 const Blog = props => {
-  const baseUrl = "https://thestudentwatch.live"
+  const baseUrl = "https://sahel13.github.io/thestudentwatch"
   const blogPost = props.data.markdownRemark.frontmatter
   const twitterMessage =
     "Check out this new article at The Student Watch website."
