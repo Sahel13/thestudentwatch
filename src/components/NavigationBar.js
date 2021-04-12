@@ -24,7 +24,7 @@ const NavigationBar = () => {
 
     return (
         <Navbar variant="dark" expand="md" css={NavBarStyle}>
-            <Navbar.Brand href="/">
+            <Navbar.Brand href="/thestudentwatch/">
                 <Img css={NavBrandImage} fixed={data.file.childImageSharp.fixed} alt="The Student Watch logo">
                 </Img>
             </Navbar.Brand>
