@@ -4,7 +4,7 @@ module.exports = {
       author: "Sahel Mohammad Iqbal",
       email: "sahel13miqbal@protonmail.ch",
       description: "The Student Watch is a website for the younger generation to engage in political discourse. The Student Watch contains opinion pieces by students on social, political and humanitarian issues.",
-      siteUrl: "https://sahel13.github.io/thestudentwatch",
+      siteUrl: "https://sahel13.github.io",
       image: "static/logo.png",
   },
   pathPrefix: "/thestudentwatch",
