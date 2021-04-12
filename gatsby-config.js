@@ -6,7 +6,6 @@ module.exports = {
       description: "The Student Watch is a website for the younger generation to engage in political discourse. The Student Watch contains opinion pieces by students on social, political and humanitarian issues.",
       siteUrl: "https://thestudentwatch.live",
       image: "static/logo.png",
-      twitter: "@SahelMIqbal",
   },
   plugins: [
       'gatsby-plugin-react-helmet',

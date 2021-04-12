@@ -27,7 +27,6 @@ const SEO = ({ title, description, image, article }) => {
     siteTitle,
     siteDescription,
     siteUrl,
-    twitter,
     } = data.site.siteMetadata
 
   const siteLogo = data.file.publicURL
@@ -61,7 +60,6 @@ const SEO = ({ title, description, image, article }) => {
           <meta property="og:image" content={seo.image} />
 
           <meta name="twitter:card" content={article ? "summary_large_image" : "summary"} />
-          <meta name="twitter:creator" content={twitter} />
           <meta name="twitter:title" content={seo.title} />
           <meta name="twitter:description" content={seo.description} />
           <meta name="twitter:image" content={seo.image} />
